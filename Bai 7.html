@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soGioGoi=parseFloat(prompt("Nhap thoi gian goi (phut) : "));
+        let cuocPhi = 0;
+        if (soGioGoi<=3) cuocPhi=soGioGoi*1500;
+        else if (soGioGoi<=5) cuocPhi=1500*3+(soGioGoi-3)*1200;
+        else if (soGioGoi<=10) cuocPhi=1500*3+1200*2+ (soGioGoi-5)*1000;
+        else cuocPhi=1500*3+1200*2+1000*5+(soGioGoi-10)*800;
+        alert("Cuoc phi phai tra la: "+cuocPhi+ " dong");
+    </script>
+</body>
+</html>
